@@ -1,5 +1,6 @@
 package com.example.project.helpers;
 
+import com.example.project.entities.Customers;
 import javafx.scene.control.Alert;
 import javafx.scene.image.Image;
 import javafx.stage.FileChooser;
@@ -11,6 +12,7 @@ import java.io.FileNotFoundException;
 public abstract class CommonCases {
 
     private File selectedFile;
+    public Customers customer;
 
     public Alert errorMessage(String message) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -43,4 +45,7 @@ public abstract class CommonCases {
         return image;
     }
 
+    public void setCustomer(Customers customer) throws FileNotFoundException {
+        this.customer = customer;
+    }
 }
