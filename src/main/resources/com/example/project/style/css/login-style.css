@@ -1,0 +1,45 @@
+.login-pane {
+    -fx-background-color: white;
+    -fx-pref-width: 596;
+    -fx-pref-height: 434;
+}
+
+.top-pane {
+    -fx-background-color: #2B4865;
+}
+
+.btn-login {
+    -fx-background-color: #2B4865;
+    -fx-text-fill: white;
+}
+
+.btn-login:hover {
+    -fx-background-color: #3a6188;
+    -fx-cursor: hand;
+}
+
+.cancel-pane:hover {
+    -fx-background-color: #b71818;
+}
+
+.password-field {
+    -fx-background-color: #F6F6F6;
+    -fx-border-color: #3a6188;
+    -fx-border-width: 0.5;
+}
+
+.combo-box-base {
+    -fx-background-color: #F6F6F6;
+    -fx-border-color: #3a6188;
+}
+
+.top-label {
+    -fx-text-fill: #c6d0cd;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 16;
+}
+
+.label-background {
+    -fx-background-color: #dae0da;
+}
+Footer
