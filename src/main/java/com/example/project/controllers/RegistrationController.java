@@ -1,5 +1,6 @@
 package com.example.project.controllers;
 
+import com.example.project.dao.CustomerService;
 import com.example.project.entities.Customers;
 import com.example.project.helpers.CommonCases;
 import com.example.project.helpers.CommonInterface;
@@ -17,6 +18,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.net.URL;
@@ -69,22 +71,21 @@ public class RegistrationController extends CommonCases implements Initializable
         Platform.runLater(() -> {
 
         });
-
     }
 
     @FXML
     void imageUploadHandler(ActionEvent event) {
         try {
-            Image image = imageUploaded();
-            if (image != null) {
+            if (selectedFile() != null) {
+                Image image = new Image(new FileInputStream(selectedFile.getAbsolutePath()));
                 imgView.setImage(image);
                 imgView.setX(50);
                 imgView.setY(25);
                 imgView.setFitHeight(166);
                 imgView.setFitWidth(200);
             }
-        } catch (CustomException e) {
-            errorMessage(e.getMessage());
+        } catch (FileNotFoundException e) {
+            errorMessage("Fadlan sawirka lama helin isku day mar kale");
         }
     }
 
@@ -95,12 +96,25 @@ public class RegistrationController extends CommonCases implements Initializable
 
     @FXML
     void stepTwoHandler(ActionEvent event) {
-        if (customer == null) {
-            System.out.println("customer is " + customer);
-        } else {
-            System.out.println(customer);
-        }
-
+//        if (customer == null) {
+//            System.out.println("customer is " + customer);
+//            try {
+//                CustomerService.insertCustomer(customer());
+//                informationAlert("Hablyo waxaad Diwaan gelisay customer cusub");
+//            } catch (CustomException e) {
+//                errorMessage(e.getMessage());
+//            }
+//
+//        } else {
+//            try {
+//                CustomerService.updateCustomer(customer());
+//                informationAlert("Hablyo waxaad update garaysay customer cusub");
+//            } catch (CustomException e) {
+//                errorMessage(e.getMessage());
+//            }
+//            System.out.println(customer);
+//        }
+        System.out.println(selectedFile);
     }
 
 
@@ -133,5 +147,21 @@ public class RegistrationController extends CommonCases implements Initializable
         headerInfo.setText("UPDATING EXISTED CUSTOMER INFO");
 
         registerBtn.setText("Update Customer");
+    }
+
+
+    private Customers customer() throws CustomException {
+        String gander = male.isSelected() ? "Male" : "Female";
+        String _address = address.getText() != null ? address.getText().trim() : null;
+        double _weight = ((!weight.getText().isEmpty() || !weight.getText().isBlank())) ? Double.parseDouble(weight.getText().trim()) : 65.0;
+      //  String image = imageUploaded() != null ? imageUploaded().getUrl() : null;
+        int customerId = super.customer == null ? null : customer.getCustomerId();
+
+//        Customers customer = new Customers(customerId, firstName.getText(), middleName.getText(), lastName.getText(),
+//                phone.getText(), gander, shift.getValue(), _address, image, _weight,
+//                "Ogleh");
+
+
+        return customer;
     }
 }

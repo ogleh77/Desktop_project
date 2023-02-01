@@ -10,9 +10,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public abstract class CommonCases {
-
-    private File selectedFile;
     public Customers customer;
+    public File selectedFile;
 
     public Alert errorMessage(String message) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -31,18 +30,10 @@ public abstract class CommonCases {
     }
 
 
-    public Image imageUploaded() throws CustomException {
+    public File selectedFile() {
         FileChooser chooser = new FileChooser();
-        Image image = null;
         selectedFile = chooser.showOpenDialog(null);
-        try {
-            if (selectedFile != null) {
-                image = new Image(new FileInputStream(selectedFile.getAbsolutePath()));
-            }
-        } catch (FileNotFoundException exception) {
-            throw new CustomException("Fadlan sawirka lama helin isku day mar kale");
-        }
-        return image;
+        return selectedFile;
     }
 
     public void setCustomer(Customers customer) throws FileNotFoundException {

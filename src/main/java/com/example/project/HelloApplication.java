@@ -18,7 +18,7 @@ public class HelloApplication extends Application {
         RegistrationController controller = fxmlLoader.getController();
 
         var customer = new Customers(1, "Luul", "Ahmed", "Jama",
-                "4303923", "Female", "Morning", "Actober",
+                "4303924", "Female", "Morning", "Actober",
                 null, 80, "jamko");
         controller.setCustomer(customer);
 
