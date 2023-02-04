@@ -20,7 +20,7 @@ public class HelloApplication extends Application {
         var customer = new Customers(1, "Luul", "Ahmed", "Jama",
                 "4303924", "Female", "Morning", "Actober",
                 null, 80, "jamko");
-        controller.setCustomer(customer);
+       // controller.setCustomer(customer);
 
         stage.setTitle("Hello!");
         stage.setScene(scene);

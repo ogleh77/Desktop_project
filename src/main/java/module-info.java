@@ -5,6 +5,7 @@ module com.example.project {
     requires org.xerial.sqlitejdbc;
     requires org.testng;
     requires com.jfoenix;
+    requires AnimateFX;
 
     opens com.example.project to javafx.fxml;
     opens com.example.project.controllers to javafx.fxml;

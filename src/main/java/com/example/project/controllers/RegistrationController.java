@@ -9,6 +9,7 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXRadioButton;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.print.PageLayout;
@@ -17,6 +18,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -66,10 +68,14 @@ public class RegistrationController extends CommonCases implements Initializable
     @FXML
     private JFXButton registerBtn;
 
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Platform.runLater(() -> {
-
+            male.setToggleGroup(genderGroup);
+            female.setToggleGroup(genderGroup);
+            shift.setItems(super.getShift());
+            mandatoryFields.addAll(firstName, middleName, lastName, phone, shift);
         });
     }
 
@@ -77,6 +83,7 @@ public class RegistrationController extends CommonCases implements Initializable
     void imageUploadHandler(ActionEvent event) {
         try {
             if (selectedFile() != null) {
+                imageUploaded = true;
                 Image image = new Image(new FileInputStream(selectedFile.getAbsolutePath()));
                 imgView.setImage(image);
                 imgView.setX(50);
@@ -95,26 +102,29 @@ public class RegistrationController extends CommonCases implements Initializable
     }
 
     @FXML
-    void stepTwoHandler(ActionEvent event) {
-//        if (customer == null) {
-//            System.out.println("customer is " + customer);
-//            try {
+    void stepTwoHandler(ActionEvent event) throws CustomException {
+        checkImageForgot("Sawirkii maad ilowdey mise ogaan bad u dhaftey");
+        System.out.println("Image uploaded " + imageUploaded);
+
+        if (imageUploaded) {
+            System.out.println("U can pass");
+        }
+//        if (isValid(mandatoryFields, genderGroup) && phoneCheck() == null) {
+//            System.out.println("Valid");
+//        } else {
+//            System.out.println("Invalid");
+//        }
+//        try {
+//            if (customer == null) {
 //                CustomerService.insertCustomer(customer());
 //                informationAlert("Hablyo waxaad Diwaan gelisay customer cusub");
-//            } catch (CustomException e) {
-//                errorMessage(e.getMessage());
-//            }
-//
-//        } else {
-//            try {
+//            } else {
 //                CustomerService.updateCustomer(customer());
 //                informationAlert("Hablyo waxaad update garaysay customer cusub");
-//            } catch (CustomException e) {
-//                errorMessage(e.getMessage());
 //            }
-//            System.out.println(customer);
+//        } catch (CustomException e) {
+//            errorMessage(e.getMessage());
 //        }
-        System.out.println(selectedFile);
     }
 
 
@@ -154,14 +164,30 @@ public class RegistrationController extends CommonCases implements Initializable
         String gander = male.isSelected() ? "Male" : "Female";
         String _address = address.getText() != null ? address.getText().trim() : null;
         double _weight = ((!weight.getText().isEmpty() || !weight.getText().isBlank())) ? Double.parseDouble(weight.getText().trim()) : 65.0;
-      //  String image = imageUploaded() != null ? imageUploaded().getUrl() : null;
-        int customerId = super.customer == null ? null : customer.getCustomerId();
+        String image = selectedFile != null ? selectedFile.getAbsolutePath() : null;
+        int customerId = super.customer == null ? 0 : customer.getCustomerId();
 
-//        Customers customer = new Customers(customerId, firstName.getText(), middleName.getText(), lastName.getText(),
-//                phone.getText(), gander, shift.getValue(), _address, image, _weight,
-//                "Ogleh");
+        Customers customer = new Customers(customerId, firstName.getText(), middleName.getText(), lastName.getText(), phone.getText(), gander, shift.getValue(), _address, image, _weight, "Ogleh");
 
 
         return customer;
     }
+
+
+    private String phoneCheck() {
+        if (!phone.getText().matches("[0-9]*")) {
+            messageValidation.setVisible(true);
+            messageValidation.setText("phone must be digits only");
+            return "error";
+        } else if (!phone.getText().matches("^\\d{7}")) {
+            messageValidation.setVisible(true);
+            messageValidation.setText("phone can't be greater than 7 digits or less");
+            return "error";
+        }
+        messageValidation.setVisible(false);
+        return null;
+
+    }
+
+
 }
