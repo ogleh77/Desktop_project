@@ -6,8 +6,10 @@ module com.example.project {
     requires org.testng;
     requires com.jfoenix;
     requires AnimateFX;
-
+    requires controlsfx;
+    requires javafx.base;
     opens com.example.project to javafx.fxml;
     opens com.example.project.controllers to javafx.fxml;
     exports com.example.project;
+
 }

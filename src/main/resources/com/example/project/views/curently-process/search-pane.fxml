@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="482.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TableView layoutX="-1.0" layoutY="36.0" prefHeight="441.0" prefWidth="677.0" stylesheets="@../../style/css/long-pane-style.css">
+            <columns>
+                <TableColumn prefWidth="145.0" text="First name" />
+                <TableColumn prefWidth="129.0" text="Middle name" />
+                <TableColumn prefWidth="104.0" text="Phone" />
+                <TableColumn prefWidth="107.0" text="Payment" />
+                <TableColumn prefWidth="92.0" text="Update" />
+                <TableColumn prefWidth="99.0" text="Information" />
+            </columns>
+        </TableView>
+      <HBox alignment="TOP_RIGHT" prefHeight="38.0" prefWidth="677.0" style="-fx-background-color: #328ca8#328ca8;">
+         <children>
+            <TextField fx:id="searchField" prefHeight="40.0" prefWidth="412.0" promptText="search for phone or name" />
+         </children>
+      </HBox>
+    </children>
+    <effect>
+        <DropShadow height="35.83" radius="16.6725" width="32.86">
+            <color>
+                <Color red="0.28947368264198303" green="0.27607211470603943" blue="0.27607211470603943" />
+            </color>
+        </DropShadow>
+    </effect>
+</AnchorPane>

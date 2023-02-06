@@ -21,6 +21,14 @@
             <version>9.0.10</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.github.typhon0/AnimateFX -->
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>8.40.14</version>
+        </dependency>
+
 
         <dependency>
             <groupId>io.github.typhon0</groupId>
@@ -68,6 +76,17 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                 <configuration>
+                    <mainClass>some.package.App</mainClass>
+                    <options>
+                        <option>--add-exports</option>
+                        <option>javafx.base/com.sun.javafx.event=org.controlsfx.controls</option>
+                    </options>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

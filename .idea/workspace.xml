@@ -5,13 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5df44ecd-c7cd-425c-b9b2-8c7ccec6696a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/css/dashboard-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/Loading_2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-bell-48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-business-report-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-card-payment-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-collapse-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-data-backup-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-forgot-password-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-gear-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-menu-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-pay-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-reset-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-select-users-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-update-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-user-30 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-user-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/dashboard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/search-pane.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/payments.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/payments2.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/database/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/helpers/CommonCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/helpers/CommonCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/views/registrations.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/registrations.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-admin-settings-male-30.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-admin-settings-male-30.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-barbell-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-barbell-50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-home-48.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-home-48.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-registration-30.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-registration-30.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +45,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="FxmlFile" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,34 +66,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mrd/Desktop/Desktop/project/src/main/resources/com/example/project/style/css&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "extract.method.default.visibility": "private",
+    "last_opened_file_path": "/Users/mrd/Desktop/Desktop/project/src/main/resources/com/example/project/style/css",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/project/style/css" />
+      <recent name="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/project/views" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/project/style" />
     </key>
@@ -189,7 +213,11 @@
       <workItem from="1675270429148" duration="1978000" />
       <workItem from="1675402543955" duration="2747000" />
       <workItem from="1675406978322" duration="1575000" />
-      <workItem from="1675529778262" duration="1020000" />
+      <workItem from="1675529778262" duration="3147000" />
+      <workItem from="1675582936905" duration="3811000" />
+      <workItem from="1675605956732" duration="843000" />
+      <workItem from="1675668457593" duration="857000" />
+      <workItem from="1675670030115" duration="5864000" />
     </task>
     <servers />
   </component>
