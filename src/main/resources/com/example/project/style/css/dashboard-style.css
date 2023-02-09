@@ -67,3 +67,14 @@
     -fx-border-color: #3a6188;
     -fx-border-width: 0.5;
 }
+
+.menu-hover:hover{
+    -fx-background-color: #d3d1d1;
+   -fx-pref-height: 70;
+    -fx-cursor: hand;
+}
+
+
+.menu-btn{
+    -fx-background-color: #3a6188;
+}

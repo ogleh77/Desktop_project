@@ -142,7 +142,7 @@
                 <Font name="Arial Black" size="12.0" />
             </font>
         </Label>
-        <HBox alignment="CENTER" layoutY="60.0" prefHeight="24.0" prefWidth="551.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="599.0">
+        <HBox alignment="CENTER" layoutY="60.0" prefHeight="24.0" prefWidth="1150.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
             <children>
                 <Label prefHeight="24.0" prefWidth="366.0" text="TODHEER GYM CENTER TEL: 4439202/2019923" textFill="#328ca8">
                     <font>
@@ -151,12 +151,6 @@
                 </Label>
             </children>
         </HBox>
-        <TextField fx:id="searchField" layoutX="622.0" layoutY="52.0" prefHeight="40.0" prefWidth="333.0" promptText="search for phone or name" />
-        <JFXButton layoutX="962.0" layoutY="52.0" onAction="#saveHandler" prefHeight="40.0" prefWidth="97.0" style="-fx-background-color: dodgerblue;" text="Search" textFill="#e1dada">
-            <font>
-                <Font name="Arial Black" size="12.0" />
-            </font>
-        </JFXButton>
     </children>
     <effect>
         <DropShadow height="12.11" radius="5.555" spread="0.01" width="12.11">

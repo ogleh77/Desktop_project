@@ -1,5 +1,7 @@
 package com.example.project.entities;
 
+import com.jfoenix.controls.JFXButton;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class Customers {
@@ -14,12 +16,15 @@ public class Customers {
     private String image;
     private double weight;
     private String whoAdded;
-    //private JFXButton information;
-    //private JFXButton update;
+
+    private JFXButton information;
+    private JFXButton payment;
+    private JFXButton update;
     private ObservableList<Payments> payments;
 
 
-    public Customers(int customerId, String firstName, String middleName, String lastName, String phone, String gander, String shift, String address, String image, double weight, String whoAdded) {
+    public Customers(int customerId, String firstName, String middleName, String lastName, String phone, String gander,
+                     String shift, String address, String image, double weight, String whoAdded) {
         this.customerId = customerId;
         this.firstName = firstName;
         this.middleName = middleName;
@@ -31,6 +36,14 @@ public class Customers {
         this.image = image;
         this.weight = weight;
         this.whoAdded = whoAdded;
+        this.information = new JFXButton("information");
+        this.update = new JFXButton("update");
+        this.payment = new JFXButton("payment");
+        information.setStyle("-fx-background-color: #1e6e66;-fx-text-fill: white;-fx-pref-width: 130;-fx-font-size: 14");
+        update.setStyle("-fx-background-color: dodgerblue;-fx-text-fill: white;-fx-pref-width: 80;-fx-font-size: 14");
+        payment.setStyle("-fx-background-color: #145ab6;-fx-text-fill: white;-fx-pref-width: 80;-fx-font-size: 14");
+        this.payments = FXCollections.observableArrayList();
+
     }
 
     public Customers(String firstName, String middleName, String lastName, String phone, String gander, String shift, String address, String image, double weight, String whoAdded) {
@@ -44,6 +57,7 @@ public class Customers {
         this.image = image;
         this.weight = weight;
         this.whoAdded = whoAdded;
+        this.payments = FXCollections.observableArrayList();
     }
 
 
@@ -93,6 +107,18 @@ public class Customers {
 
     public ObservableList<Payments> getPayments() {
         return payments;
+    }
+
+    public JFXButton getInformation() {
+        return information;
+    }
+
+    public JFXButton getPayment() {
+        return payment;
+    }
+
+    public JFXButton getUpdate() {
+        return update;
     }
 
     @Override

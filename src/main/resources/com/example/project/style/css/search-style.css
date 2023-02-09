@@ -1,0 +1,57 @@
+.search-pane {
+    -fx-pref-height: 482;
+    -fx-pref-width: 690;
+    -fx-background-color: white;
+}
+
+.top-pane {
+    -fx-background-color: #328ca8;
+}
+
+.cancel-pane:hover {
+    -fx-background-color: #b71818;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    /*-fx-border-color: all-dialog-border-color;*/
+    -fx-border-width: 1;
+    -fx-table-header-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #3aaacc;
+}
+
+.table-view .column-header-background .label {
+    -fx-text-fill: #f3f0f0;
+    -fx-padding: 2;
+    -fx-font-family: Helvetica;
+    -fx-font-size: 16;
+}
+
+.table-view:focused {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #4f4e4e;
+    -fx-font-family: Helvetica;
+    -fx-font-size: 16;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #dee0e0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+    -fx-text-fill: white;
+}
+.table-row-cell:odd{
+   -fx-background-color: white;
+}

@@ -5,36 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5df44ecd-c7cd-425c-b9b2-8c7ccec6696a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/css/dashboard-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/Loading_2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-bell-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-business-report-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-card-payment-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-collapse-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-data-backup-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-forgot-password-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-gear-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-menu-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-pay-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-reset-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-select-users-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-update-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-user-30 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-user-30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/search-pane.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/payments.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/payments2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/currently_working/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/dao/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/models/DailyReportDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/css/search-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/example/project/dao/PaymentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cabd03a4-40d4-4f1c-99fd-85099b2f492d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cabd03a4-40d4-4f1c-99fd-85099b2f492d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/database/database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/entities/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/entities/Customers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/models/PaymentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/models/PaymentModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-admin-settings-male-30.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-admin-settings-male-30.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-barbell-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-barbell-50.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-home-48.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-home-48.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-registration-30.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons/icons8-registration-30.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/style/css/dashboard-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/css/dashboard-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/search-pane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/search-pane.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/views/payments.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/payments.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +31,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="CSS File" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/project/models/PaymentModel.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +68,7 @@
     "create.test.in.the.same.root": "true",
     "dart.analysis.tool.window.visible": "false",
     "extract.method.default.visibility": "private",
-    "last_opened_file_path": "/Users/mrd/Desktop/Desktop/project/src/main/resources/com/example/project/style/css",
+    "last_opened_file_path": "/Users/mrd/Desktop/Desktop/project/src/main/java/com/example/project/models",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
@@ -93,6 +83,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/project/models" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/project/style/css" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/project/style/icons" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/project/views" />
@@ -105,11 +96,11 @@
       <recent name="com.example.project" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.project.models" />
       <recent name="com.example.project.dao" />
+      <recent name="com.example.project.models" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="JUnit.PaymentServiceTest.fetchAllCustomersPayments">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.project.HelloApplication" />
       <module name="project" />
@@ -139,39 +130,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerModelTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.project.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.project.models" />
-      <option name="MAIN_CLASS_NAME" value="com.example.project.models.CustomerModelTest" />
-      <option name="METHOD_NAME" value="insert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerModelTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.project.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.project.models" />
-      <option name="MAIN_CLASS_NAME" value="com.example.project.models.CustomerModelTest" />
-      <option name="METHOD_NAME" value="update" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.fetchUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PaymentServiceTest.fetchAllCustomersPayments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <extension name="coverage">
         <pattern>
@@ -180,8 +139,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.project.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.project.dao.UserServiceTest" />
-      <option name="METHOD_NAME" value="fetchUsers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.project.dao.PaymentServiceTest" />
+      <option name="METHOD_NAME" value="fetchAllCustomersPayments" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceTest.fetchAllOnlinePayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.project.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.project.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.project.dao.PaymentServiceTest" />
+      <option name="METHOD_NAME" value="fetchAllOnlinePayment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceTest.insertCustomerWithPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.project.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.project.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.project.dao.PaymentServiceTest" />
+      <option name="METHOD_NAME" value="insertCustomerWithPayment" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -189,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PaymentServiceTest.fetchAllCustomersPayments" />
+        <item itemvalue="JUnit.PaymentServiceTest.fetchAllOnlinePayment" />
+        <item itemvalue="JUnit.PaymentServiceTest.insertCustomerWithPayment" />
         <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.CustomerModelTest.fetchByRoleAndGander" />
-        <item itemvalue="JUnit.CustomerModelTest.update" />
-        <item itemvalue="JUnit.CustomerModelTest.insert" />
-        <item itemvalue="JUnit.UserServiceTest.fetchUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +208,13 @@
       <workItem from="1675582936905" duration="3811000" />
       <workItem from="1675605956732" duration="843000" />
       <workItem from="1675668457593" duration="857000" />
-      <workItem from="1675670030115" duration="5864000" />
+      <workItem from="1675670030115" duration="6012000" />
+      <workItem from="1675698968960" duration="526000" />
+      <workItem from="1675703418073" duration="6246000" />
+      <workItem from="1675752554033" duration="5244000" />
+      <workItem from="1675799320089" duration="1180000" />
+      <workItem from="1675833790062" duration="615000" />
+      <workItem from="1675867521008" duration="10414000" />
     </task>
     <servers />
   </component>
