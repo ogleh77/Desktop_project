@@ -101,13 +101,6 @@ public class Payments {
 
     @Override
     public String toString() {
-        return "Payments{" +
-                "paymentID=" + paymentID +
-                ", paymentDate='" + paymentDate + '\'' +
-                ", expDate=" + expDate +
-                ", poxing=" + poxing +
-                ", online=" + online +
-                ", pending=" + pending +
-                '}';
+        return "--paymentDate: " + paymentDate + " expDate: " + expDate + " is_online: " + isOnline() + "";
     }
 }

@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5df44ecd-c7cd-425c-b9b2-8c7ccec6696a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/currently_working/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/dao/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/models/DailyReportDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/css/search-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/example/project/dao/PaymentServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/example/project/dao/CustomerServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/cabd03a4-40d4-4f1c-99fd-85099b2f492d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cabd03a4-40d4-4f1c-99fd-85099b2f492d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/database/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/controllers/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/dao/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/dao/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/dao/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/dao/PaymentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/entities/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/entities/Customers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/entities/Payments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/entities/Payments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/models/CustomerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/models/CustomerModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/models/PaymentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/models/PaymentModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/style/css/dashboard-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/style/css/dashboard-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/search-pane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/curently-process/search-pane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project/views/payments.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project/views/payments.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/example/project/dao/PaymentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/example/project/dao/PaymentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/example/project/models/CustomerModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/example/project/models/CustomerModelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,31 +51,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "extract.method.default.visibility": "private",
-    "last_opened_file_path": "/Users/mrd/Desktop/Desktop/project/src/main/java/com/example/project/models",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mrd/Desktop/Desktop/project/src/main/java/com/example/project/models&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/example/project/models" />
@@ -100,31 +95,50 @@
       <recent name="com.example.project.models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PaymentServiceTest.fetchAllCustomersPayments">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.project.HelloApplication" />
+  <component name="RunManager" selected="JUnit.CustomerServiceTest.fetchCustomer">
+    <configuration name="CustomerServiceTest.fetchByRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.project.*" />
+          <option name="PATTERN" value="com.example.project.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.project.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.project.dao.CustomerServiceTest" />
+      <option name="METHOD_NAME" value="fetchByRole" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerModelTest.fetchByRoleAndGander" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerServiceTest.fetchCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.project.models.*" />
+          <option name="PATTERN" value="com.example.project.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.project.models" />
-      <option name="MAIN_CLASS_NAME" value="com.example.project.models.CustomerModelTest" />
-      <option name="METHOD_NAME" value="fetchByRoleAndGander" />
+      <option name="PACKAGE_NAME" value="com.example.project.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.project.dao.CustomerServiceTest" />
+      <option name="METHOD_NAME" value="fetchCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceTest.fetchOnlineCustomersByGander" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.project.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.project.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.project.dao.CustomerServiceTest" />
+      <option name="METHOD_NAME" value="fetchOnlineCustomersByGander" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,7 +160,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentServiceTest.fetchAllOnlinePayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PaymentServiceTest.fetchSingleCustomersPayments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project" />
       <extension name="coverage">
         <pattern>
@@ -156,23 +170,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.project.dao" />
       <option name="MAIN_CLASS_NAME" value="com.example.project.dao.PaymentServiceTest" />
-      <option name="METHOD_NAME" value="fetchAllOnlinePayment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PaymentServiceTest.insertCustomerWithPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.project.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.project.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.project.dao.PaymentServiceTest" />
-      <option name="METHOD_NAME" value="insertCustomerWithPayment" />
+      <option name="METHOD_NAME" value="fetchSingleCustomersPayments" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerServiceTest.fetchCustomer" />
+        <item itemvalue="JUnit.CustomerServiceTest.fetchOnlineCustomersByGander" />
         <item itemvalue="JUnit.PaymentServiceTest.fetchAllCustomersPayments" />
-        <item itemvalue="JUnit.PaymentServiceTest.fetchAllOnlinePayment" />
-        <item itemvalue="JUnit.PaymentServiceTest.insertCustomerWithPayment" />
-        <item itemvalue="Application.HelloApplication" />
-        <item itemvalue="JUnit.CustomerModelTest.fetchByRoleAndGander" />
+        <item itemvalue="JUnit.PaymentServiceTest.fetchSingleCustomersPayments" />
+        <item itemvalue="JUnit.CustomerServiceTest.fetchByRole" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +212,8 @@
       <workItem from="1675752554033" duration="5244000" />
       <workItem from="1675799320089" duration="1180000" />
       <workItem from="1675833790062" duration="615000" />
-      <workItem from="1675867521008" duration="10414000" />
+      <workItem from="1675867521008" duration="12277000" />
+      <workItem from="1676012010183" duration="6417000" />
     </task>
     <servers />
   </component>

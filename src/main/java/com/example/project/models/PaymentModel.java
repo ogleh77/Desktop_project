@@ -32,6 +32,7 @@ public class PaymentModel {
                 ps.setString(6, null);
             } else {
                 ps.setInt(6, payment.getBox().getBoxId());
+                setTookBoxIsReadyFalse(payment.getBox());
             }
 
             ps.setString(7, customerPhone);
@@ -102,6 +103,7 @@ public class PaymentModel {
 
         return payments;
     }
+
 
     //------------------helper methods---------------
     private static void makeReport(Payments payment, String customerGender) throws SQLException {

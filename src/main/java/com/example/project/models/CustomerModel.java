@@ -1,6 +1,8 @@
 package com.example.project.models;
 
+import com.example.project.dao.PaymentService;
 import com.example.project.entities.Customers;
+import com.example.project.entities.Payments;
 import com.example.project.entities.Users;
 import com.example.project.helpers.CustomException;
 import com.example.project.helpers.IConnection;
@@ -27,20 +29,65 @@ public class CustomerModel implements Repo<Customers> {
         insertOrUpdateStatement(customer, updateQuery, false);
     }
 
-    @Override
-    public ObservableList<Customers> fetchCustomersByGander(Users activeUser) throws SQLException {
+    public ObservableList<Customers> fetchOnlineCustomersByGander(Users activeUser) throws SQLException {
 
         ObservableList<Customers> customers = FXCollections.observableArrayList();
 
         String fetchingQueryWithGander = fetchByRoleAndGander(activeUser);
 
+        System.out.println(fetchingQueryWithGander);
         Statement statement = connection.createStatement();
 
         ResultSet rs = statement.executeQuery(fetchingQueryWithGander);
 
 
+        while (rs.next()) {
+            limit++;
+            // --------------Load phone of the customer-------------
+            String customerPhone = rs.getString("phone");
 
-        return Repo.super.fetchCustomersByGander(activeUser);
+            ObservableList<Payments> payments = PaymentService.fetchAllOnlinePayment(customerPhone);
+            Customers customer = new Customers(rs.getInt("customer_id"), rs.getString("first_name"),
+                    rs.getString("middle_name"), rs.getString("last_name"),
+                    rs.getString("phone"), rs.getString("gander"),
+                    rs.getString("shift"), rs.getString("address"),
+                    rs.getString("image"), rs.getDouble("weight"),
+                    rs.getString("who_added"));
+
+            customer.setPayments(payments);
+            customers.add(customer);
+        }
+
+
+        return customers;
+    }
+
+    public Customers fetchCustomer(String phone) throws SQLException {
+
+        String fetchCustomer = "SELECT * FROM customers WHERE phone=" + phone;
+
+        System.out.println(fetchCustomer);
+        Statement statement = connection.createStatement();
+
+        ResultSet rs = statement.executeQuery(fetchCustomer);
+        Customers customer = null;
+
+        while (rs.next()) {
+            // --------------Load phone of the customer-------------
+            ObservableList<Payments> payments = PaymentService.fetchAllCustomersPayments(phone);
+            customer = new Customers(rs.getInt("customer_id"), rs.getString("first_name"),
+                    rs.getString("middle_name"), rs.getString("last_name"),
+                    rs.getString("phone"), rs.getString("gander"),
+                    rs.getString("shift"), rs.getString("address"),
+                    rs.getString("image"), rs.getDouble("weight"),
+                    rs.getString("who_added"));
+
+            customer.setPayments(payments);
+
+        }
+
+
+        return customer;
     }
 
     @Override
@@ -50,7 +97,6 @@ public class CustomerModel implements Repo<Customers> {
 
 
     //--------Helper methods------------
-    //-----------Insert or updating statement------------
     private void insertOrUpdateStatement(Customers customer, String query, boolean insert) throws SQLException {
         PreparedStatement ps = connection.prepareStatement(query);
         ps.setString(1, customer.getFirstName());

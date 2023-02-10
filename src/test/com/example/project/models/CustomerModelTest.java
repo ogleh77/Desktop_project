@@ -40,4 +40,14 @@ class CustomerModelTest {
 
         //System.out.println(CustomerModel.fetchByRoleAndGander(user));
     }
+
+    @Test
+    void fetchOnlineCustomersByGander() {
+
+        var user = new Users("Ahmed", "Mire", "4303923", "Female",
+                "afternoon", "jamko", "1122", null, "super_admin");
+
+
+
+    }
 }

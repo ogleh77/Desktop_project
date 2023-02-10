@@ -23,8 +23,7 @@ public class Customers {
     private ObservableList<Payments> payments;
 
 
-    public Customers(int customerId, String firstName, String middleName, String lastName, String phone, String gander,
-                     String shift, String address, String image, double weight, String whoAdded) {
+    public Customers(int customerId, String firstName, String middleName, String lastName, String phone, String gander, String shift, String address, String image, double weight, String whoAdded) {
         this.customerId = customerId;
         this.firstName = firstName;
         this.middleName = middleName;
@@ -36,12 +35,12 @@ public class Customers {
         this.image = image;
         this.weight = weight;
         this.whoAdded = whoAdded;
-        this.information = new JFXButton("information");
-        this.update = new JFXButton("update");
-        this.payment = new JFXButton("payment");
-        information.setStyle("-fx-background-color: #1e6e66;-fx-text-fill: white;-fx-pref-width: 130;-fx-font-size: 14");
-        update.setStyle("-fx-background-color: dodgerblue;-fx-text-fill: white;-fx-pref-width: 80;-fx-font-size: 14");
-        payment.setStyle("-fx-background-color: #145ab6;-fx-text-fill: white;-fx-pref-width: 80;-fx-font-size: 14");
+//        this.information = new JFXButton("information");
+//        this.update = new JFXButton("update");
+//        this.payment = new JFXButton("payment");
+//        information.setStyle("-fx-background-color: #1e6e66;-fx-text-fill: white;-fx-pref-width: 130;-fx-font-size: 14");
+//        update.setStyle("-fx-background-color: dodgerblue;-fx-text-fill: white;-fx-pref-width: 80;-fx-font-size: 14");
+//        payment.setStyle("-fx-background-color: #145ab6;-fx-text-fill: white;-fx-pref-width: 80;-fx-font-size: 14");
         this.payments = FXCollections.observableArrayList();
 
     }
@@ -121,20 +120,15 @@ public class Customers {
         return update;
     }
 
+    public void setPayments(ObservableList<Payments> payments) {
+        this.payments = payments;
+    }
+
     @Override
     public String toString() {
-        return "Customers{" +
-                "customerId=" + customerId +
-                ", firstName='" + firstName + '\'' +
-                ", middleName='" + middleName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", phone='" + phone + '\'' +
-                ", gander='" + gander + '\'' +
-                ", shift='" + shift + '\'' +
-                ", address='" + address + '\'' +
-                ", image='" + image + '\'' +
-                ", weight=" + weight +
-                ", whoAdded='" + whoAdded + '\'' +
-                '}';
+        return "\n [customerId: " +
+                customerId + " firstname: " +
+                firstName + "  lastname: " +
+                lastName + " gander " + gander + " phone: " + phone + "\n payments: " + payments + "]\n\n";
     }
 }
