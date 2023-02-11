@@ -41,9 +41,5 @@ public class PaymentService {
         return paymentModel.fetchAllCustomersPayments(customerPhone);
     }
 
-    public static ObservableList<Payments> fetchCustomersPaymentsWhereOnlineOrNot(String customerPhone) throws SQLException {
-        return paymentModel.fetchCustomersPaymentsWhereOnlineOrNot(customerPhone);
-    }
-
 
 }

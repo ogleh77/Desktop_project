@@ -52,7 +52,7 @@ class PaymentServiceTest {
     @Test
     void fetchAllOnlinePayment() throws SQLException {
 
-        System.out.println(PaymentService.fetchAllOnlinePayment("4303925"));
+        System.out.println(PaymentService.fetchAllOnlinePayment("4303924"));
     }
 
     @Test
@@ -60,8 +60,4 @@ class PaymentServiceTest {
         System.out.println(PaymentService.fetchAllCustomersPayments("4303924"));
     }
 
-    @Test
-    void fetchSingleCustomersPayments() throws SQLException {
-        System.out.println(PaymentService.fetchCustomersPaymentsWhereOnlineOrNot("4303924"));
-    }
 }
